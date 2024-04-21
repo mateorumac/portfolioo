@@ -4,11 +4,9 @@
     <div class="container4">
       <div class="profile-content">
         <div class="profile-image">
-          <!-- Add your image here -->
           <img src="@/assets/prof.jpg" alt="Mateo Rumac" />
         </div>
-        <div class="profile-info">
-          <!-- Add your information here -->
+        <div class="profile-info">    
           <h2 style="font-weight: bold;">Mateo Rumac</h2>
           <p>Computer Science student at Juraj Dobrila University of Informatics</p>
           <p>Knowledge of technologies such as HTML, CSS, JS, Vue.js and learning..</p>
@@ -18,8 +16,7 @@
             <span class="icon-padding"></span>
             <i class="fab fa-js fa-4x" title="JavaScript" style="color: #F0DB4F;"></i>
             <span class="icon-padding"></span>
-            <i class="fab fa-vuejs fa-4x" title="Vue.js" style="color: #41B883;"></i>
-            
+            <i class="fab fa-vuejs fa-4x" title="Vue.js" style="color: #41B883;"></i> 
           </div>
       </div>
     </div>
@@ -28,7 +25,6 @@
   <section id="projects">
     <div class="container2" >
       <h2 style="color: #fbe0c3;">My Projects</h2>
-
       <div class="cards-container">
       <!-- First Project Card -->
       <div class="card">
@@ -37,7 +33,6 @@
               <img src="@/assets/bba.png" alt="Beauty salon website" />
             </a>
           </div>
-
           <div class="card-content">
             <p>
               A beauty salon website with working backend to process user
@@ -45,43 +40,57 @@
               Technologies used: HTML, CSS, Javascript, Vue.js, MongoDB
             </p>
           </div>
-
           <div class="card-footer">
             <a href="https://github.com/mateorumac/frontendWA" target="_blank">
               <i class="fab fa-github fa-lg"></i>
             </a>
             <a href="https://wa-frontend-mateorumac.vercel.app/" target="_blank" class="visit-link">
-    <!-- Add an icon or text for visiting the site -->
     <i class="fas fa-external-link-alt"></i>
   </a>
           </div>
         </div>
-
         <!-- Second Project Card -->
+        <div class="card">
+          <div class="card-image">
+            <a href="https://pizzeria-jupiter-pula.onrender.com/" target="_blank">
+              <img src="@/assets/pizzeria.jpg" alt="Pizzeria Jupiter" />
+            </a>
+          </div>
+          <div class="card-content">
+            <p>
+              Website redesigned for pizzeria Jupiter using Vue.js
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/mateorumac/pizza" target="_blank">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+            <a href="https://pizzeria-jupiter-pula.onrender.com/" target="_blank" class="visit-link">
+    <i class="fas fa-external-link-alt"></i>
+  </a>
+          </div>
+        </div>
         <div class="card">
           <div class="card-image">
             <a href="https://stock.adobe.com/hr/search?k=work+in+progress&asset_id=101974188" target="_blank">
               <img src="@/assets/wip.jpg" alt="Work in Progress" />
             </a>
           </div>
-
           <div class="card-content">
             <p>
               Work in progress...
             </p>
           </div>
-
           <div class="card-footer">
             <a href="https://stock.adobe.com/hr/search?k=work+in+progress&asset_id=101974188" target="_blank">
               <i class="fab fa-github fa-lg"></i>
             </a>
             <a href="https://stock.adobe.com/hr/search?k=work+in+progress&asset_id=101974188" target="_blank" class="visit-link">
-    <!-- Add an icon or text for visiting the site -->
+    
     <i class="fas fa-external-link-alt"></i>
   </a>
           </div>
         </div>
-
         <!-- Add more project cards as needed -->
       </div>
     </div>
@@ -208,7 +217,7 @@ p {
   
   .cta-button:hover {
   background-color: #f4f4f4;
-  transform: scale(1.05); /* Increase scale on hover for a bouncing effect */
+  transform: scale(1.05); 
 }
   
 
@@ -242,19 +251,19 @@ p {
 
 .icon-padding {
   display: inline-block;
-  width: 18px; /* Adjust the width for the desired padding */
+  width: 18px; 
 }
 
 #projects {
   background-color: #344648;
   padding: 4rem 0;
-  overflow: hidden; /* Add this to fix the issue */
+  overflow: hidden; 
   color: #f4f4f4;
 }
 
 .cards-container {
   display: flex;
-  justify-content: flex-start; /* Add this line to align cards to the left */
+  justify-content: flex-start; 
   flex-wrap: wrap;
   margin-left: 15px;
 }
@@ -268,11 +277,11 @@ p {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease; /* Add transition for a smooth effect */
+    transition: transform 0.3s ease; 
 }
 
 .card:hover {
-  transform: scale(1.05); /* Increase scale on hover for a popping effect */
+  transform: scale(1.05); 
 }
   
   .card-image {
@@ -281,7 +290,8 @@ p {
   
   .card-image img {
     width: 100%;
-    max-width: 100%;
+    height: 130px; 
+    object-fit: cover;
     border-radius: 8px 8px 0 0;
   }
   
