@@ -58,7 +58,7 @@
           </div>
           <div class="card-content">
             <p>
-              Website redesigned for pizzeria Jupiter using Vue.js
+              A pizza restaurant website redesigned for pizzeria Jupiter using Vue.js
             </p>
           </div>
           <div class="card-footer">
