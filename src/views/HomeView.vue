@@ -162,7 +162,7 @@ export default {
       window.open(url, '_blank');
       },
     visitResumeSite() {
-      const url ='https://mateorumaccv.tiiny.site';
+      const url ='https://mateorumaccvu.tiiny.site/';
       window.open(url, '_blank');
       
       }
