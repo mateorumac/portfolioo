@@ -41,7 +41,7 @@
         <!-- Second Project Card -->
         <div class="card">
           <div class="card-image">
-            <a href="https://pizzeria-jupiter-pula.onrender.com/" target="_blank">
+            <a href="https://pizzeria-jupiter.vercel.app/" target="_blank">
               <img src="@/assets/pizzeria.jpg" alt="Pizzeria Jupiter" />
             </a>
           </div>
