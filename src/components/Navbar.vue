@@ -6,8 +6,7 @@
         </router-link>
         <nav class="nav-links">
           <router-link to="#projects" class="nav-link" @click="scrollToSection('#projects')">Projects</router-link>
-          <router-link to="#about" class="nav-link" @click="scrollToSection('#about')">About me</router-link>    
-          
+          <router-link to="#about" class="nav-link" @click="scrollToSection('#about')">About</router-link>
         </nav>
       </div>
     </header>
@@ -39,7 +38,6 @@
 <style scoped>
 
   header {
-  color: #ffffff;
   padding: 10px;
   width: 100%;
   z-index: 1000; /* Set a high z-index to make sure it's above other elements */
@@ -73,11 +71,11 @@
   }
 .nav-link {
   display: flex;
-    align-items: center;
+  align-items: center;
   text-decoration: none;
   color: #fbe0c3;
   margin: 0 1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: color 0.3s ease; /* Add a smooth transition for color change */
 }
