@@ -51,33 +51,14 @@
             </p>
           </div>
           <div class="card-footer">
-            
-            <a href="https://pizzeria-jupiter.vercel.app/" target="_blank" class="visit-link">
-              <i class="fas fa-external-link-alt"></i>
+            <a href="https://github.com/mateorumac/pizza" target="_blank">
+              <i class="fab fa-github fa-lg"></i>
             </a>
+            <a href="https://pizzeria-jupiter-pula.onrender.com/" target="_blank" class="visit-link">
+    <i class="fas fa-external-link-alt"></i>
+  </a>
           </div>
         </div>
-        <!-- Third Project Card -->
-        <div class="card">
-          <div class="card-image">
-            <a href="https://portfoliotemplate-mateorumacs-projects.vercel.app/" target="_blank">
-              <img src="@/assets/portfolioheader.png" alt="Portfolio website template" />
-            </a>
-          </div>
-          <div class="card-content">
-            <p>
-              Simple, clean and responsive Portfolio website template made using HTML and CSS
-            </p>
-          </div>
-          <div class="card-footer">
-            
-            <a href="https://portfoliotemplate-mateorumacs-projects.vercel.app/" target="_blank" class="visit-link">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Third Project Card -->
         <div class="card">
           <div class="card-image">
             <a href="https://stock.adobe.com/hr/search?k=work+in+progress&asset_id=101974188" target="_blank">
