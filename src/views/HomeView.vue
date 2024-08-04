@@ -51,9 +51,6 @@
             </p>
           </div>
           <div class="card-footer">
-            <a href="https://github.com/mateorumac/pizza" target="_blank">
-              <i class="fab fa-github fa-lg"></i>
-            </a>
             <a href="https://pizzeria-jupiter-pula.onrender.com/" target="_blank" class="visit-link">
     <i class="fas fa-external-link-alt"></i>
   </a>
