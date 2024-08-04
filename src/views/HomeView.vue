@@ -61,6 +61,25 @@
         </div>
         <div class="card">
           <div class="card-image">
+            <a href="https://portfoliotemplate-mateorumacs-projects.vercel.app/" target="_blank">
+              <img src="@/assets/portfolioheader.png" alt="Portfolio website template" />
+            </a>
+          </div>
+          <div class="card-content">
+            <p>
+              A simple, clean and responsive Portfolio website template made using HTML and CSS
+            </p>
+          </div>
+          <div class="card-footer">
+            
+            <a href="https://portfoliotemplate-mateorumacs-projects.vercel.app/" target="_blank" class="visit-link">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
             <a href="https://stock.adobe.com/hr/search?k=work+in+progress&asset_id=101974188" target="_blank">
               <img src="@/assets/wip.jpg" alt="Work in Progress" />
             </a>
