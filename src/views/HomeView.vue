@@ -27,11 +27,11 @@
           </div>
           <div class="card-content">
             <p>
-              A beauty salon website featuring a fully functional backend to seamlessly handle user requests.<br /> <br>
-              Sidenote: Backend takes a while (up to 1 minute) to process requests due to inactivity.<br><br>
+              A beauty salon website featuring a fully functional backend to seamlessly handle user requests.<br /> <br> 
               Login to see more functionalities!<br>
               E-mail: user@gmail.com <br>
-              Password: user1
+              Password: user1 <br><br>
+              Sidenote: Backend takes a while (up to 1 minute) to process requests due to inactivity.
             </p>
           </div>
           <div class="card-footer">
