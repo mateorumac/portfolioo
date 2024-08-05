@@ -28,7 +28,10 @@
           <div class="card-content">
             <p>
               A beauty salon website with working backend to process user requests.<br /> <br>
-              Sidenote: Backend takes a while (up to 1 minute) to process requests due to inactivity and free hosting.
+              Sidenote: Backend takes a while (up to 1 minute) to process requests due to inactivity and free hosting.<br>
+              Login to see more functionalities!<br>
+              E-mail: user@gmail.com <br>
+              Password: user1
             </p>
           </div>
           <div class="card-footer">
