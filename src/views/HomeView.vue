@@ -21,19 +21,19 @@
         <!-- First Project Card -->
         <div class="card">
           <div class="card-image">
-            <a href="https://wa-frontend-mateorumac.vercel.app/" target="_blank">
+            <a href="https://frontend-wa.vercel.app" target="_blank">
               <img src="@/assets/bba.png" alt="Beauty salon website" />
             </a>
           </div>
           <div class="card-content">
             <p>
               A beauty salon website with working backend to process user requests.<br /> <br>
-              Sidenote: Backend takes a while to process requests due to inactivity and free hosting.
+              Sidenote: Backend takes a while (up to 1 minute) to process requests due to inactivity and free hosting.
             </p>
           </div>
           <div class="card-footer">
             
-            <a href="https://wa-frontend-mateorumac.vercel.app/" target="_blank" class="visit-link">
+            <a href="https://frontend-wa.vercel.app" target="_blank" class="visit-link">
               <i class="fas fa-external-link-alt"></i>
             </a>
           </div>
