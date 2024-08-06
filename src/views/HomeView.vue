@@ -21,19 +21,22 @@
         <!-- First Project Card -->
         <div class="card">
           <div class="card-image">
-            <a href="https://wa-frontend-mateorumac.vercel.app/" target="_blank">
+            <a href="https://frontend-wa.vercel.app" target="_blank">
               <img src="@/assets/bba.png" alt="Beauty salon website" />
             </a>
           </div>
           <div class="card-content">
             <p>
-              A beauty salon website with working backend to process user requests.<br /> <br>
-              Sidenote: Backend takes a while to process requests due to inactivity and free hosting.
+              A beauty salon website featuring a fully functional backend to seamlessly handle user requests.<br /> <br> 
+              Login to see more functionalities!<br>
+              E-mail: user@gmail.com <br>
+              Password: user1 <br><br>
+              Sidenote: Backend takes a while (up to 1 minute) to process requests due to inactivity.
             </p>
           </div>
           <div class="card-footer">
             
-            <a href="https://wa-frontend-mateorumac.vercel.app/" target="_blank" class="visit-link">
+            <a href="https://frontend-wa.vercel.app" target="_blank" class="visit-link">
               <i class="fas fa-external-link-alt"></i>
             </a>
           </div>
@@ -47,7 +50,7 @@
           </div>
           <div class="card-content">
             <p>
-              A pizza restaurant website redesigned for pizzeria Jupiter using Vue.js
+              A modernized pizza restaurant website for Pizzeria Jupiter, skillfully redesigned using Vue.js to enhance user experience and streamline functionality.
             </p>
           </div>
           <div class="card-footer">
@@ -64,7 +67,7 @@
           </div>
           <div class="card-content">
             <p>
-              A simple, clean and responsive Portfolio website template made using HTML and CSS
+              A sleek and responsive portfolio website template, crafted with precision using HTML and CSS, designed to showcase work with a clean and modern aesthetic.
             </p>
           </div>
           <div class="card-footer">
