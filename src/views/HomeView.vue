@@ -174,8 +174,8 @@ p {
 }
 
 #cta {
-  background-color: #344648;
-  color: #f4f4f4;
+  background-color: #1E1E1E; /* Primary Color */
+  color: #F4F4F4;
   text-align: center;
   padding: 50px;
   position: relative;
@@ -212,7 +212,7 @@ h2 {
 }
 
 #profile {
-  background-color: #fbe0c3;
+  background-color: #F4F4F4;
   padding: 4rem 0;
 }
 
@@ -244,7 +244,7 @@ h2 {
 }
 
 #projects {
-  background-color: #344648;
+  background-color: #1E1E1E; /* Primary Color */
   padding: 4rem 0;
   overflow: hidden;
   color: #f4f4f4;
@@ -306,7 +306,7 @@ h2 {
 }
 
 .card-footer a:hover {
-  color: #70abd3; /* Change color on hover */
+  color: #4E9F3D; /* Change color on hover */
 }
 
 #about {
@@ -333,8 +333,8 @@ h2 {
 
 .dwnldbtn {
   display: inline-block;
-  background-color: #344648;
-  color: #fbe0c3;
+  background-color: #4E9F3D;
+  color: #F4F4F4;
   padding: 16px;
   margin-top: 10px;
   text-decoration: none;
@@ -347,6 +347,7 @@ h2 {
 }
 
 .dwnldbtn:hover {
+  background-color: #3A7D29;
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -366,7 +367,7 @@ h2 {
 }
 
 .contact-item:hover {
-  color: #70abd3;
+  color: #4E9F3D;
 }
 
 .footer {
@@ -377,7 +378,8 @@ h2 {
 
 .footer p {
   margin: 0;
-  font-size: 0.8rem; /* Smaller font size */
+  font-size: 0.8rem;
+  color: #FFC857;
 }
 
 /* Larger screens */

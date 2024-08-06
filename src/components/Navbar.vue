@@ -42,8 +42,8 @@
   width: 100%;
   z-index: 1000; /* Set a high z-index to make sure it's above other elements */
   transition: background-color 0.3s ease; /* Add a smooth transition effect */
-  background-color: #344648;
-  color: #fbe0c3;
+  background-color: #1E1E1E; /* Primary Color */
+  color: #FFC857;
   padding: 23px;
   font-family: 'Roboto Slab', serif;
   }
@@ -55,7 +55,7 @@
   box-sizing: border-box;
 }
 .nav:hover {
-  color: #70abd3; /* Change the color on hover */
+  color: #4E9F3D; /* Change the color on hover */
 }
 .nav {
   font-size: 2rem;
@@ -81,7 +81,7 @@
 }
 
 .nav-link:hover {
-  color: #70abd3; /* Change the color on hover */
+  color: #4E9F3D; /* Change the color on hover */
 }
 
 </style>
