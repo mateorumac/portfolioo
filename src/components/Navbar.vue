@@ -1,8 +1,9 @@
 <template>
   <div>
-    <header> 
+    <header>
       <div class="container">
-        <router-link to="/" class="nav-link" @click="scrollToTop"><h1 class="nav">Mateo Rumac</h1>
+        <router-link to="/" class="nav-link" @click="scrollToTop">
+          <h1 class="nav">Mateo Rumac</h1>
         </router-link>
         <nav class="nav-links">
           <router-link to="#projects" class="nav-link" @click="scrollToSection('#projects')">Projects</router-link>
@@ -15,7 +16,7 @@
 </template>
 
 <script>
-  export default {
+export default {
   methods: {
     scrollToTop() {
       window.scrollTo({
@@ -36,17 +37,15 @@
 </script>
 
 <style scoped>
-
-  header {
-  padding: 10px;
+header {
+  padding: 23px;
   width: 100%;
   z-index: 1000; /* Set a high z-index to make sure it's above other elements */
   transition: background-color 0.3s ease; /* Add a smooth transition effect */
-  background-color: #1E1E1E; /* Primary Color */
-  color: #FFC857;
-  padding: 23px;
-  font-family: 'Roboto Slab', serif;
-  }
+  background-color: #1E1E1E; /* Primary Dark Green */
+  color: #c9b373; /* Light Cream */
+  font-family: 'Roboto Slab', serif; /* Premium Font */
+}
 
 .container {
   display: flex;
@@ -54,34 +53,38 @@
   align-items: center;
   box-sizing: border-box;
 }
-.nav:hover {
-  color: #4E9F3D; /* Change the color on hover */
-}
+
 .nav {
   font-size: 2rem;
   margin: 0;
   text-decoration: none; /* Remove the underline */
-  color: #fbe0c3; /* Set the default text color */
+  color: #c9b373;
   cursor: pointer; /* Change the cursor to indicate it's clickable */
+  font-family: 'Roboto Slab', serif; /* Apply premium font */
+}
+
+.nav:hover {
+  color: #f4f4f4;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+}
+
 .nav-link {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fbe0c3;
+  color: #c9b373;
   margin: 0 1rem;
   font-size: 1.3rem;
   cursor: pointer;
   transition: color 0.3s ease; /* Add a smooth transition for color change */
+  font-family: 'Roboto Slab', serif; /* Apply premium font */
 }
 
 .nav-link:hover {
-  color: #4E9F3D; /* Change the color on hover */
+  color: #f4f4f4;
 }
-
 </style>
