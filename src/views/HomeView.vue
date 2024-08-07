@@ -79,12 +79,12 @@
         <div class="card">
           <div class="card-image">
             <a href="https://stock.adobe.com/hr/search?k=work+in+progress&asset_id=101974188" target="_blank">
-              <img src="@/assets/wip.jpg" alt="Work in Progress" />
+              <img src="@/assets/bitebuddy.jpg" alt="Work in Progress" />
             </a>
           </div>
           <div class="card-content">
             <p class="cardtext">
-              Work in progress...
+              BiteBuddy, a web app made in Vue.js for searching food and recipes with additional functionalities using the Spoonacular API, is coming soon. Stay tuned!
             </p>
           </div>
           <div class="card-footer">
