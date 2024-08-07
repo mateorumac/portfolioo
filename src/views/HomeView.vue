@@ -8,7 +8,7 @@
         <div class="profile-info">
           <h2 style="font-weight: bold;"><i>Mateo Rumac</i></h2>
           <p><i>Univ. Bacc. Inf. </i></p> <br>
-          <p><i>Passionate developer with a strong foundation in web development.</i></p> <br>
+          <p><i>Passionate developer with a strong foundation in web <br> frontend development.</i></p> <br>
           <p><i> Committed to creating elegant and efficient solutions</i></p> 
         </div>
       </div>
@@ -154,7 +154,7 @@ export default {
       window.open(url, '_blank');
     },
     visitResumeSite() {
-      const url = 'https://mateorumaccve.tiiny.site/';
+      const url = 'https://mrumac-cv-e.tiiny.site';
       window.open(url, '_blank');
     }
   }
