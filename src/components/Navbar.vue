@@ -40,11 +40,11 @@ export default {
 header {
   padding: 23px;
   width: 100%;
-  z-index: 1000; /* Set a high z-index to make sure it's above other elements */
-  transition: background-color 0.3s ease; /* Add a smooth transition effect */
-  background-color: #1E1E1E; /* Primary Dark Green */
-  color: #c9b373; /* Light Cream */
-  font-family: 'Roboto Slab', serif; /* Premium Font */
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  background-color: #1E1E1E;
+  color: #c9b373;
+  font-family: 'Roboto Slab', serif;
 }
 
 .container {
@@ -57,10 +57,10 @@ header {
 .nav {
   font-size: 2rem;
   margin: 0;
-  text-decoration: none; /* Remove the underline */
+  text-decoration: none;
   color: #c9b373;
-  cursor: pointer; /* Change the cursor to indicate it's clickable */
-  font-family: 'Roboto Slab', serif; /* Apply premium font */
+  cursor: pointer;
+  font-family: 'Roboto Slab', serif;
 }
 
 .nav:hover {
@@ -80,11 +80,37 @@ header {
   margin: 0 1rem;
   font-size: 1.3rem;
   cursor: pointer;
-  transition: color 0.3s ease; /* Add a smooth transition for color change */
-  font-family: 'Roboto Slab', serif; /* Apply premium font */
+  transition: color 0.3s ease;
+  font-family: 'Roboto Slab', serif;
 }
 
 .nav-link:hover {
   color: #f4f4f4;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .nav {
+    flex: 1;
+    text-align: left;
+    margin-left: -26px;
+  }
+
+  .nav-links {
+    flex: 1;
+    justify-content: flex-end;
+    margin-left: 0.9rem;
+    margin-right: -1.2rem;
+  }
+
+  .nav-link {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+  }
 }
 </style>
