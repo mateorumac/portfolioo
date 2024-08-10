@@ -20,6 +20,27 @@
       <h2>My Projects</h2>
       <div class="cards-container">
         <!-- First Project Card -->
+
+        <div class="card">
+          <div class="card-image">
+            <a href="https://bbuddy-mateorumacs-projects.vercel.app/" target="_blank">
+              <img src="@/assets/bbuddy.jpg" alt="Work in Progress" />
+            </a>
+          </div>
+          <div class="card-content">
+            <p class="cardtext">
+              BiteBuddy is an intuitive web application crafted with Vue.js, designed to make searching for food and recipes a breeze. Leveraging the powerful Spoonacular API, 
+              BiteBuddy offers a seamless and feature-rich experience for food enthusiasts. <br><br>
+              Note: API is limited to 150 requests per day.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="https://bbuddy-mateorumacs-projects.vercel.app/" target="_blank" class="visit-link">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
         <div class="card">
           <div class="card-image">
             <a href="https://frontend-wa.vercel.app" target="_blank">
@@ -32,7 +53,7 @@
               Login to see more functionalities!<br>
               E-mail: user@gmail.com <br>
               Password: user1 <br><br>
-              Sidenote: Backend takes a while (up to 1 minute) to process requests due to inactivity.
+              Note: Backend takes a while (up to 1 minute) to process requests due to inactivity.
             </p>
           </div>
           <div class="card-footer">
@@ -76,23 +97,7 @@
             </a>
           </div>
         </div>
-        <div class="card">
-          <div class="card-image">
-            <a href="https://stock.adobe.com/hr/search?k=work+in+progress&asset_id=101974188" target="_blank">
-              <img src="@/assets/bitebuddy.jpg" alt="Work in Progress" />
-            </a>
-          </div>
-          <div class="card-content">
-            <p class="cardtext">
-              BiteBuddy, a web app made in Vue.js for searching food and recipes with additional functionalities using the Spoonacular API, is coming soon. Stay tuned!
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="https://stock.adobe.com/hr/search?k=work+in+progress&asset_id=101974188" target="_blank" class="visit-link">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
+        
         <!-- Add more project cards as needed -->
       </div>
     </div>
@@ -269,6 +274,7 @@ p {
   height: 130px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .card-content {
