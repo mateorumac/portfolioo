@@ -159,7 +159,7 @@ export default {
       window.open(url, '_blank');
     },
     visitResumeSite() {
-      const url = 'https://mrumac-cv-e.tiiny.site';
+      const url = 'https://mrumaccven.tiiny.site/';
       window.open(url, '_blank');
     }
   }
