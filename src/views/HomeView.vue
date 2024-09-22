@@ -470,20 +470,68 @@ p {
 }
 
 /* Medium screens */
-@media only screen and (max-width: 1199px) and (min-width: 768px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .container4,
-  .container2,
   .container5,
   .container3 {
-    max-width: 600px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .profile-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .profile-info {
+    max-width: 50%; /* Increase space for profile content */
+    margin-left: 50px;
+  }
+
+  .profile-image img {
+    width: 100%; /* Scale profile image properly */
+    margin-left: -150px; /* Reduce negative margin for better alignment */
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem; /* Adjust spacing between cards */
   }
 
   .card {
-    width: calc(50% - 20px); /* Adjust the width for two cards in a row */
+    height: auto;
+    width: 100%; /* Set width to take up the full grid column */
+    max-width: none;
+  }
+
+  .card-image {
+    width: 100%; /* Adjust image to take full width of card */
+    height: 250px; /* Fixed height for project images */
+  }
+
+  .card-content {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .dwnldbtn {
+    font-size: 1.2rem;
+    padding: 14px 20px;
+  }
+
+  header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .nav-link {
+    font-size: 1.4rem;
+    margin: 0 1.5rem;
   }
 }
 
-/* Smaller screens */
+/* Mobile screens */
 @media only screen and (max-width: 767px) {
   .container4,
   .container2,
