@@ -3,13 +3,13 @@
     <div class="container4">
       <div class="profile-content">
         <div class="profile-image">
-          <img src="@/assets/prof.jpg" alt="Mateo Rumac" />
+          <img src="@/assets/prof1.jpg" alt="Mateo Rumac" />
         </div>
         <div class="profile-info">
-          <h2 ><i>Mateo Rumac</i></h2>
-          <p><i>Univ. Bacc. Inf. </i></p> <br>
-          <p><i>Passionate developer with a strong foundation in web <br> frontend development.</i></p> <br>
-          <p><i> Committed to creating elegant and efficient solutions</i></p> 
+          <h2 >Mateo Rumac</h2>
+          <p class="subtext"><i>Univ. Bacc. Inf. </i></p> <br>
+          <p class="description">Passionate developer with a strong foundation in web <br> frontend development.</p> <br>
+          <p class="description">Committed to creating elegant and efficient solutions</p> 
         </div>
       </div>
     </div>
@@ -28,16 +28,12 @@
             </a>
           </div>
           <div class="card-content">
+            <h3 class="project-headline">BiteBuddy</h3>
             <p class="cardtext">
               BiteBuddy is an intuitive web application crafted with Vue.js, designed to make searching for food and recipes a breeze. Leveraging the powerful Spoonacular API, 
               BiteBuddy offers a seamless and feature-rich experience for food enthusiasts. <br><br>
               Note: API is limited to 150 requests per day.
             </p>
-          </div>
-          <div class="card-footer">
-            <a href="https://bbuddy-mateorumacs-projects.vercel.app/" target="_blank" class="visit-link">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
           </div>
         </div>
 
@@ -48,18 +44,14 @@
             </a>
           </div>
           <div class="card-content">
+            <h3 class="project-headline">Beauty by Ana</h3>
             <p class="cardtext">
               A beauty salon website featuring a fully functional backend to seamlessly handle user requests.<br /> <br> 
               Login to see more functionalities!<br>
               E-mail: user@gmail.com <br>
               Password: user1 <br><br>
-              Note: Backend takes a while (up to 1 minute) to process requests due to inactivity.
+              Note: Backend takes up to a minute to process requests due to inactivity.
             </p>
-          </div>
-          <div class="card-footer">
-            <a href="https://frontend-wa.vercel.app" target="_blank" class="visit-link">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
           </div>
         </div>
         <!-- Second Project Card -->
@@ -70,14 +62,10 @@
             </a>
           </div>
           <div class="card-content">
+            <h3 class="project-headline">Pizzeria Jupiter</h3>
             <p class="cardtext">
               A modernized pizza restaurant website for Pizzeria Jupiter, skillfully redesigned using Vue.js to enhance user experience and streamline functionality.
             </p>
-          </div>
-          <div class="card-footer">
-            <a href="https://pizzeria-jupiter-pula.onrender.com/" target="_blank" class="visit-link">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
           </div>
         </div>
         <div class="card">
@@ -87,17 +75,12 @@
             </a>
           </div>
           <div class="card-content">
+            <h3 class="project-headline">Portfolio template</h3>
             <p class="cardtext">
               A sleek and responsive portfolio website template, crafted with precision using HTML and CSS, designed to showcase work with a clean and modern aesthetic.
             </p>
           </div>
-          <div class="card-footer">
-            <a href="https://portfoliotemplate-mateorumacs-projects.vercel.app/" target="_blank" class="visit-link">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
         </div>
-        
         <!-- Add more project cards as needed -->
       </div>
     </div>
@@ -167,11 +150,31 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin: 0;
   font-family: 'Roboto Slab', serif;
   color: #c9b373; /* Gold accent for headlines */
+}
+
+.subtext {
+  font-size: 1.3rem; /* Subtext size adjustment */
+  color: #f8f5e1; /* Light text for readability */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-top: -1.3rem;
+}
+
+.description {
+  font-size: 1.25rem; /* Keep description a bit smaller for clarity */
+  color: #f8f5e1; /* Same color for readability */
+  line-height: 1.6; /* Increase line spacing for readability */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-top: 0.8rem;
 }
 
 #cta {
@@ -189,25 +192,30 @@ h1 {
 h2 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
-  font-family: 'Roboto Slab', serif; /* Premium Font */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   color: #c9b373; /* Gold accent for headlines */
 }
 
 p {
   font-size: 1.25rem;
-  font-family: 'Roboto', sans-serif; /* Readable Font */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   color: #f8f5e1; /* Light color for readability on dark backgrounds */
 }
 
 .cardtext {
   font-size: 1.25rem;
-  font-family: 'Roboto', sans-serif; /* Readable Font */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   color: #1E1E1E;
 }
 
 #profile {
-  background-color: #2c2c2c; /* Gray-ish background color */
+  /* Adding a subtle gradient background */
+  background: linear-gradient(135deg, #2c2c2c, #1E1E1E); /* Subtle gradient */
   padding: 4rem 0;
+  color: #f8f5e1;
 }
 
 .container4 {
@@ -222,89 +230,125 @@ p {
 }
 
 .profile-image img {
-  max-width: 115%;
-  border-radius: 50%;
-  margin-left: -60px;
-  
+  width: 125%; 
+  border-radius: 15px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  margin-left: -200px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.profile-image img:hover {
+  transform: scale(1.05); /* Pop out effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
 .profile-info {
-  max-width: 60%;
-  margin-left: 50px;
+  max-width: 80%; /* Increased width to allow more horizontal space */
+  margin-left: 40px; /* Adjust margin as needed */
 }
 
 
 #projects {
-  background-color: #1E1E1E; /* Primary Color */
+  background-color: #1E1E1E;
   padding: 4rem 0;
-  overflow: hidden;
   color: #f4f4f4;
+  text-align: center;
 }
 
 .cards-container {
+  margin-top: 4rem;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-left: 15px;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
 }
 
 .card {
-  width: 300px;
-  margin: 24px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease;
-  background-color: #f4f4f4; /* White background for card */
+  flex-direction: row; /* Horizontal layout */
+  align-items: center;
+  background-color: #2c2c2c;
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+  height: 400px; /* Set fixed height for all cards */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.card::before, .card::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #c9b373;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.card::before {
+  top: -20px;
+  left: -20px;
+  transform: rotate(45deg);
+}
+
+.card::after {
+  bottom: -20px;
+  right: -20px;
+  transform: rotate(45deg);
 }
 
 .card-image {
-  text-align: center;
+  width: 50%; /* Image takes 40% of the card */
+  height: 100%; /* Full height of the card */
+  padding-right: 20px;
 }
 
 .card-image img {
   width: 100%;
-  height: 130px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 8px 8px 0 0;
-  image-rendering: -webkit-optimize-contrast;
+  border-radius: 15px; /* Rounded corners for the image */
+  transition: transform 0.3s ease;
 }
 
 .card-content {
-  padding: 20px;
-  flex: 1;
-  overflow-y: auto;
-  max-height: 200px; /* Adjust this height based on your design */
-  color: #1E1E1E; /* Dark Text for readability */
+  width: 50%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.card-footer {
-  padding: 6px;
-  text-align: center;
-  margin-top: auto;
+.project-headline {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #c9b373; /* Golden color for project headline */
+  margin-bottom: 1rem;
 }
 
-.card-footer a {
-  color: #1E1E1E;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  display: inline-block;
-  padding: 0 10px;
+.cardtext {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f4f4f4;
 }
 
-.card-footer a:hover {
-  color: #c9b373; /* Change color on hover */
+.container2 {
+  margin-bottom: 2rem; 
 }
 
 #about {
-  background-color: #2c2c2c; /* Same background color as hero section */
+  background-color: #2c2c2c; 
   padding: 4rem 0;
 }
 
@@ -318,7 +362,8 @@ p {
   text-align: center;
   margin-top: 10px;
   padding-top: 10px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,7 +387,8 @@ p {
   transition: background-color 0.3s, transform 0.3s ease-in-out;
   border: none; /* Remove the default border */
   outline: none;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .dwnldbtn:hover {
@@ -378,7 +424,8 @@ p {
   margin: 0;
   font-size: 0.8rem;
   color: #F4F4F4; /* Light Text for readability */
-  font-family: 'Roboto', sans-serif; /* Readable Font */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 /* Larger screens */
@@ -395,16 +442,9 @@ p {
     justify-content: space-between;
   }
 
-  .profile-image img {
-    /* Keep the profile image size unchanged */
-    max-width: 115%;
-    border-radius: 50%;
-    margin-left: -60px;
-  }
-
   .profile-info {
     max-width: 60%;
-    margin-left: 50px;
+    margin-left: 80px;
   }
 
   .project-content {
@@ -456,6 +496,7 @@ p {
   .profile-content,
   .project-content {
     flex-direction: column;
+    margin-bottom: -25px;
   }
 
   .profile-info,
@@ -470,16 +511,33 @@ p {
     width: 100%;
     max-width: none;
     margin-left: 0;
-    margin-bottom: 20px;
-  }
-
-  .cards-container {
-    margin: 0; /* Remove the negative margin for smaller screens */
+    margin-bottom: 45px;
+    margin-top: -25px;
   }
 
   .card {
-    width: 100%; /* Make cards full-width on smaller screens */
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 200px;
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .card-content {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .card::before, .card::after {
+    display: none;
   }
 }
 </style>
+
 

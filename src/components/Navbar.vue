@@ -6,8 +6,8 @@
           <h1 class="nav">Mateo Rumac</h1>
         </router-link>
         <nav class="nav-links">
-          <router-link to="#projects" class="nav-link" @click="scrollToSection('#projects')">Projects</router-link>
-          <router-link to="#about" class="nav-link" @click="scrollToSection('#about')">About</router-link>
+          <router-link to="#projects" class="nav-link" @click="scrollToSection('#projects')">My Projects</router-link>
+          <router-link to="#about" class="nav-link" @click="scrollToSection('#about')">About Me</router-link>
         </nav>
       </div>
     </header>
@@ -38,13 +38,16 @@ export default {
 
 <style scoped>
 header {
-  padding: 23px;
+  position: sticky;
+  top: 0;
+  padding: 28px;
   width: 100%;
   z-index: 1000;
-  transition: background-color 0.3s ease;
-  background-color: #1E1E1E;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  background-color: rgba(30, 30, 30, 0.94); /* See-through dark background */
+  backdrop-filter: blur(5px); /* Adds blur to enhance transparency */
   color: #c9b373;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -55,16 +58,20 @@ header {
 }
 
 .nav {
-  font-size: 2rem;
+  font-size: 2.3rem; /* Increase font size */
+  font-weight: 700; /* Make the name bold */
+  letter-spacing: 0.05em; /* Slight letter spacing for emphasis */
+  color: #f4f4f4; /* Brighter color to stand out */
+  text-transform: uppercase; /* Optional: Makes the name uppercase */
   margin: 0;
   text-decoration: none;
-  color: #c9b373;
   cursor: pointer;
-  font-family: 'Roboto Slab', serif;
+  transition: transform 0.3s ease;
+  
 }
 
 .nav:hover {
-  color: #f4f4f4;
+  transform: scale(1.05); /* Scale up the text slightly */
 }
 
 .nav-links {
@@ -76,16 +83,34 @@ header {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #c9b373;
+  color: #f4f4f4;
   margin: 0 1rem;
   font-size: 1.3rem;
   cursor: pointer;
-  transition: color 0.3s ease;
-  font-family: 'Roboto Slab', serif;
+  transition: transform 0.3s ease, background-position 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c9b373;
+  visibility: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  visibility: visible;
+  width: 100%; /* Underline effect on hover */
 }
 
 .nav-link:hover {
-  color: #f4f4f4;
+  transform: scale(1.1); /* Grow the link slightly */
 }
 
 /* Media query for mobile view */
@@ -94,7 +119,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   .nav {
     flex: 1;
     text-align: left;
