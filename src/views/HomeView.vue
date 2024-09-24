@@ -157,28 +157,28 @@ h1 {
   font-size: 3.5rem;
   margin: 0;
   font-family: 'Roboto Slab', serif;
-  color: #c9b373; /* Gold accent for headlines */
+  color: #c9b373; 
 }
 
 .subtext {
-  font-size: 1.3rem; /* Subtext size adjustment */
-  color: #f8f5e1; /* Light text for readability */
+  font-size: 1.3rem; 
+  color: #f8f5e1; 
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   margin-top: -1.3rem;
 }
 
 .description {
-  font-size: 1.25rem; /* Keep description a bit smaller for clarity */
-  color: #f8f5e1; /* Same color for readability */
-  line-height: 1.6; /* Increase line spacing for readability */
+  font-size: 1.25rem; 
+  color: #f8f5e1; 
+  line-height: 1.6; 
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   margin-top: 0.8rem;
 }
 
 #cta {
-  background-color: #1E1E1E; /* Primary Color */
+  background-color: #1E1E1E; 
   text-align: center;
   padding: 50px;
   position: relative;
@@ -194,14 +194,14 @@ h2 {
   margin-bottom: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #c9b373; /* Gold accent for headlines */
+  color: #c9b373; 
 }
 
 p {
   font-size: 1.25rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: #f8f5e1; /* Light color for readability on dark backgrounds */
+  color: #f8f5e1; 
 }
 
 .cardtext {
@@ -212,7 +212,6 @@ p {
 }
 
 #profile {
-  /* Adding a subtle gradient background */
   background: linear-gradient(135deg, #2c2c2c, #1E1E1E); /* Subtle gradient */
   padding: 4rem 0;
   color: #f8f5e1;
@@ -238,13 +237,13 @@ p {
 }
 
 .profile-image img:hover {
-  transform: scale(1.05); /* Pop out effect on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .profile-info {
-  max-width: 80%; /* Increased width to allow more horizontal space */
-  margin-left: 40px; /* Adjust margin as needed */
+  max-width: 80%; 
+  margin-left: 40px; 
 }
 
 
@@ -266,14 +265,14 @@ p {
 .card {
   position: relative;
   display: flex;
-  flex-direction: row; /* Horizontal layout */
+  flex-direction: row; 
   align-items: center;
   background-color: #2c2c2c;
   border-radius: 15px;
   padding: 20px;
   width: 80%;
   max-width: 1200px;
-  height: 400px; /* Set fixed height for all cards */
+  height: 400px; 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -306,8 +305,8 @@ p {
 }
 
 .card-image {
-  width: 50%; /* Image takes 40% of the card */
-  height: 100%; /* Full height of the card */
+  width: 50%; 
+  height: 100%;
   padding-right: 20px;
 }
 
@@ -315,7 +314,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px; /* Rounded corners for the image */
+  border-radius: 15px; 
   transition: transform 0.3s ease;
 }
 
@@ -331,7 +330,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
-  color: #c9b373; /* Golden color for project headline */
+  color: #c9b373; 
   margin-bottom: 1rem;
 }
 
@@ -368,11 +367,11 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #f8f5e1; /* Light color for about text */
+  color: #f8f5e1; 
 }
 
 #about h2 {
-  color: #c9b373; /* Gold accent for headlines */
+  color: #c9b373; 
 }
 
 .dwnldbtn {
@@ -385,7 +384,7 @@ p {
   font-size: 1.1rem;
   border-radius: 5px;
   transition: background-color 0.3s, transform 0.3s ease-in-out;
-  border: none; /* Remove the default border */
+  border: none; 
   outline: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -417,13 +416,13 @@ p {
 
 .footer {
   margin-top: 20px;
-  text-align: center; /* Center-align the footer text */
+  text-align: center; 
 }
 
 .footer p {
   margin: 0;
   font-size: 0.8rem;
-  color: #F4F4F4; /* Light Text for readability */
+  color: #F4F4F4; 
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
@@ -438,7 +437,7 @@ p {
   }
 
   .profile-content {
-    flex-direction: row; /* Ensure content is displayed in a row */
+    flex-direction: row; 
     justify-content: space-between;
   }
 
@@ -452,20 +451,20 @@ p {
   }
 
   .project-image img {
-    max-width: 110%; /* Slightly smaller project images */
+    max-width: 110%; 
     border-radius: 8px;
     margin-left: 30px;
     padding: 10px;
   }
 
   .project-info {
-    max-width: 60%; /* Allow text for projects to go a bit wider */
+    max-width: 60%; 
     padding: 20px;
     font-family: 'Roboto Slab', serif;
   }
 
   .container2 {
-    max-width: none; /* Remove the max-width for project containers */
+    max-width: none;
   }
 }
 
@@ -484,30 +483,30 @@ p {
   }
 
   .profile-info {
-    max-width: 50%; /* Increase space for profile content */
+    max-width: 50%; 
     margin-left: 50px;
   }
 
   .profile-image img {
-    width: 100%; /* Scale profile image properly */
-    margin-left: -150px; /* Reduce negative margin for better alignment */
+    width: 100%; 
+    margin-left: -150px; 
   }
 
   .cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem; /* Adjust spacing between cards */
+    gap: 3rem; 
   }
 
   .card {
     height: auto;
-    width: 100%; /* Set width to take up the full grid column */
+    width: 100%; 
     max-width: none;
   }
 
   .card-image {
-    width: 100%; /* Adjust image to take full width of card */
-    height: 250px; /* Fixed height for project images */
+    width: 100%; 
+    height: 250px; 
   }
 
   .card-content {
