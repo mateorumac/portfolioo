@@ -66,6 +66,19 @@
         </div>
         <div class="card">
           <div class="card-image">
+            <a href="https://github.com/mateorumac/userManagement" target="_blank">
+              <img src="@/assets/users.png" alt="User management dashboard" />
+            </a>
+          </div>
+          <div class="card-content">
+            <h3 class="project-headline">User management dashboard</h3>
+            <p class="cardtext">
+              A React app for managing users, featuring a searchable, paginated user table. Users can be edited or deleted with simple controls. The app offers responsive design and efficient user data management.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
             <a href="https://portfoliotemplate-mateorumacs-projects.vercel.app/" target="_blank">
               <img src="@/assets/portfolioheader.png" alt="Portfolio website template" />
             </a>
@@ -77,6 +90,7 @@
             </p>
           </div>
         </div>
+        
         <!-- Add more cards -->
       </div>
     </div>
