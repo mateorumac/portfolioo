@@ -44,8 +44,8 @@ header {
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease, opacity 0.3s ease;
-  background-color: rgba(30, 30, 30, 0.94); /* See-through dark background */
-  backdrop-filter: blur(5px); /* Adds blur to enhance transparency */
+  background-color: rgba(30, 30, 30, 0.94); 
+  backdrop-filter: blur(5px); 
   color: #c9b373;
   font-family: 'Poppins', sans-serif;
 }
@@ -58,11 +58,11 @@ header {
 }
 
 .nav {
-  font-size: 2.3rem; /* Increase font size */
-  font-weight: 700; /* Make the name bold */
-  letter-spacing: 0.05em; /* Slight letter spacing for emphasis */
-  color: #f4f4f4; /* Brighter color to stand out */
-  text-transform: uppercase; /* Optional: Makes the name uppercase */
+  font-size: 2.3rem; 
+  font-weight: 700; 
+  letter-spacing: 0.05em; 
+  color: #f4f4f4; 
+  text-transform: uppercase;
   margin: 0;
   text-decoration: none;
   cursor: pointer;
@@ -71,7 +71,7 @@ header {
 }
 
 .nav:hover {
-  transform: scale(1.05); /* Scale up the text slightly */
+  transform: scale(1.05); 
 }
 
 .nav-links {
@@ -106,11 +106,11 @@ header {
 
 .nav-link:hover::before {
   visibility: visible;
-  width: 100%; /* Underline effect on hover */
+  width: 100%; 
 }
 
 .nav-link:hover {
-  transform: scale(1.1); /* Grow the link slightly */
+  transform: scale(1.1); 
 }
 
 /* Media query for mobile view */

@@ -19,8 +19,6 @@
     <div class="container2">
       <h2>My Projects</h2>
       <div class="cards-container">
-        <!-- First Project Card -->
-
         <div class="card">
           <div class="card-image">
             <a href="https://bbuddy-mateorumacs-projects.vercel.app/" target="_blank">
@@ -36,7 +34,6 @@
             </p>
           </div>
         </div>
-
         <div class="card">
           <div class="card-image">
             <a href="https://frontend-wa.vercel.app" target="_blank">
@@ -54,7 +51,6 @@
             </p>
           </div>
         </div>
-        <!-- Second Project Card -->
         <div class="card">
           <div class="card-image">
             <a href="https://pizzeria-jupiter.vercel.app/" target="_blank">
@@ -81,19 +77,16 @@
             </p>
           </div>
         </div>
-        <!-- Add more project cards as needed -->
+        <!-- Add more cards -->
       </div>
     </div>
   </section>
-
   <section id="about">
     <div class="container5">
       <h2>Some details about me</h2> <br>
       <p class="aboutme">Hello everyone!👋 <br><br> I'm Mateo Rumac, a 24-year-old recent graduate from Juraj Dobrila University in Pula, Croatia, specializing in front-end web development. Outside of my academic journey, I love diving into real-world projects, transforming lines of code into meaningful digital experiences.
-
-<br><br><br>With a C1 proficiency in English, I handle both the technical and communication sides of projects with ease. I'm on the lookout for entry or junior-level positions in web development, eager to bring my skills and passion to new challenges.
-
-<br><br><br>Let's connect and turn ideas into engaging digital realities! If you'd like to know more about me, feel free to download my resume below!</p><br>
+        <br><br><br>With a C1 proficiency in English, I handle both the technical and communication sides of projects with ease. I'm on the lookout for entry or junior-level positions in web development, eager to bring my skills and passion to new challenges.
+        <br><br><br>Let's connect and turn ideas into engaging digital realities! If you'd like to know more about me, feel free to download my resume below!</p><br>
       <button class="dwnldbtn" @click="visitResumeSite">View Resume</button>
     </div>
   </section>
@@ -212,7 +205,7 @@ p {
 }
 
 #profile {
-  background: linear-gradient(135deg, #2c2c2c, #1E1E1E); /* Subtle gradient */
+  background: linear-gradient(135deg, #2c2c2c, #1E1E1E); 
   padding: 4rem 0;
   color: #f8f5e1;
 }
@@ -489,19 +482,22 @@ p {
 
   .profile-image img {
     width: 100%; 
-    margin-left: -150px; 
+    margin-left: -30px; 
   }
 
   .cards-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center; 
+    padding: 0 20px; 
   }
 
   .card {
     height: auto;
     width: 100%; 
-    max-width: none;
+    max-width: 900px; 
+    margin: 0 auto; 
   }
 
   .card-image {
@@ -527,6 +523,72 @@ p {
   .nav-link {
     font-size: 1.4rem;
     margin: 0 1.5rem;
+  }
+}
+
+/* Tablet screens */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container4,
+  .container5,
+  .container3 {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-info {
+    max-width: 100%; 
+    margin-left: 0;
+  }
+
+  .profile-image img {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0 50px;
+  }
+
+  .card {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 220px;
+  }
+
+  .card-content {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .dwnldbtn {
+    font-size: 1.1rem;
+    padding: 12px 16px;
+  }
+
+  header .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
+    margin: 0 1.2rem;
   }
 }
 
@@ -586,5 +648,3 @@ p {
   }
 }
 </style>
-
-
