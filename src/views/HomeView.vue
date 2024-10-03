@@ -21,6 +21,21 @@
       <div class="cards-container">
         <div class="card">
           <div class="card-image">
+            <a href="https://smartstyleecom.vercel.app/" target="_blank">
+              <img src="@/assets/bbuddy.jpg" alt="Work in Progress" />
+            </a>
+          </div>
+          <div class="card-content">
+            <h3 class="project-headline">SmartStyle</h3>
+            <p class="cardtext">
+              SmartStyle is a sleek e-commerce web application built with React, 
+              designed to simplify online shopping. Leveraging a dynamic product API, SmartStyle offers a seamless and user-friendly experience, 
+              with responsive design for optimal browsing on any device.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
             <a href="https://bbuddy-mateorumacs-projects.vercel.app/" target="_blank">
               <img src="@/assets/bbuddy.jpg" alt="Work in Progress" />
             </a>
