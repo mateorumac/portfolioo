@@ -22,7 +22,7 @@
         <div class="card">
           <div class="card-image">
             <a href="https://smartstyleecom.vercel.app/" target="_blank">
-              <img src="@/assets/bbuddy.jpg" alt="Work in Progress" />
+              <img src="@/assets/smartstyle.jpg" alt="E-commerce web app" />
             </a>
           </div>
           <div class="card-content">
@@ -37,7 +37,7 @@
         <div class="card">
           <div class="card-image">
             <a href="https://bbuddy-mateorumacs-projects.vercel.app/" target="_blank">
-              <img src="@/assets/bbuddy.jpg" alt="Work in Progress" />
+              <img src="@/assets/bbuddy.jpg" alt="Food search web app" />
             </a>
           </div>
           <div class="card-content">
