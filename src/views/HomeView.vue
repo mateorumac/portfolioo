@@ -92,21 +92,31 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <!-- Add more cards -->
+      </div>
+    </div>
+  </section>
+  <section id="publications">
+    <div class="container2">
+      <h2>My Publications</h2>
+      <div class="cards-container">
+        <div class="card vertical-card">
           <div class="card-image">
-            <a href="https://portfoliotemplate-mateorumacs-projects.vercel.app/" target="_blank">
-              <img src="@/assets/portfolioheader.png" alt="Portfolio website template" />
+            <a href="https://repozitorij.unipu.hr/islandora/object/unipu%3A9707" target="_blank">
+              <img src="@/assets/zavrsnirad.png" alt="Paper Title Image" />
             </a>
           </div>
           <div class="card-content">
-            <h3 class="project-headline">Portfolio template</h3>
-            <p class="cardtext">
-              A sleek and responsive portfolio website template, crafted with precision using HTML and CSS, designed to showcase work with a clean and modern aesthetic.
+            <h3 class="project-headline">Artificial intelligence and web frontend programming</h3>
+            <p class="cardtext short-text">
+              This paper examines how AI, especially tools like ChatGPT and Copilot, can enhance frontend web development. 
+              It highlights their impact on user experience and development speed.
+              Future trends like Edge AI and generative models are discussed, along with challenges such as performance 
+              optimization and user privacy. Practical examples show AI's growing role in creating smarter web applications.
             </p>
+            <p class="keywords">Keywords: Artificial intelligence, Frontend programming, ChatGPT, Copilot, web applications</p>
           </div>
         </div>
-        
-        <!-- Add more cards -->
       </div>
     </div>
   </section>
@@ -166,14 +176,13 @@ export default {
     visitResumeSite() {
       const url = 'https://mateorumaccveng.tiiny.site/';
       window.open(url, '_blank');
-    }
-  }
-};
+    },
+  },
+  };
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 
 h1 {
   font-size: 3.5rem;
@@ -267,7 +276,6 @@ p {
   max-width: 80%; 
   margin-left: 40px; 
 }
-
 
 #projects {
   background-color: #1E1E1E;
@@ -367,6 +375,14 @@ p {
 .container2 {
   margin-bottom: 2rem; 
 }
+
+#publications {
+  background-color: #1E1E1E;
+  padding: 4rem 0;
+  color: #f4f4f4;
+  text-align: center;
+}
+
 
 #about {
   background-color: #2c2c2c; 
@@ -619,6 +635,10 @@ p {
     font-size: 1.3rem;
     margin: 0 1.2rem;
   }
+
+  .card-content {
+    text-align: left;
+  }
 }
 
 /* Mobile screens */
@@ -675,5 +695,21 @@ p {
   .card::before, .card::after {
     display: none;
   }
+
+  #publications h2 {
+    margin-top: -90px;
+  }
+  
+  #publications .project-headline {
+    font-size: 1.4rem;
+  }
+
+  #publications .keywords {
+    font-size: 0.9rem;
+  }
+  #publications .cardtext {
+    font-size: 0.95rem;
+  }
 }
 </style>
+
