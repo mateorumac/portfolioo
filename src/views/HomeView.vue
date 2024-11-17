@@ -935,6 +935,38 @@ p {
   .dwnldbtn {
     margin-top: 2rem; 
   }
+
+  #cta {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  #cta p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 90%;
+    color: #F4F4F4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+
+  .contact-links {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .contact-item {
+    font-size: 1.5rem;
+  }
 }
 </style>
 
