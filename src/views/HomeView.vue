@@ -14,7 +14,38 @@
       </div>
     </div>
   </section>
-
+   <section id="about">
+  <div class="container5">
+    <h2>A Bit About Me</h2> <br>
+    <div class="about-cards">
+      <!-- Card 1 -->
+      <div class="about-card">
+        <i class="fas fa-user-graduate"></i>
+        <h3>Education</h3>
+        <p>
+          I'm Mateo Rumac, a 24-year-old web developer employed at D&A Nekretnine. I graduated from Juraj Dobrila University in Pula, Croatia, where I honed my skills in modern web technologies and design.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div class="about-card">
+        <i class="fas fa-language"></i>
+        <h3>Language Skills</h3>
+        <p>
+          I am fluent in English with a C1 proficiency, allowing me to communicate effectively and handle both technical and client-facing aspects of projects.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="about-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Professional Services</h3>
+        <p>
+          In addition to my professional role, I am available to create websites for clients. I take pride in delivering elegant and efficient solutions tailored to individual needs.
+        </p>
+      </div>
+    </div>
+    <button class="dwnldbtn" @click="visitResumeSite">View Resume</button>
+  </div>
+</section>
   <section id="projects">
     <div class="container2">
       <h2>Featured Projects</h2>
@@ -120,38 +151,6 @@
       </div>
     </div>
   </section>
-  <section id="about">
-  <div class="container5">
-    <h2>A Bit About Me</h2> <br>
-    <div class="about-cards">
-      <!-- Card 1 -->
-      <div class="about-card">
-        <i class="fas fa-user-graduate"></i>
-        <h3>Education</h3>
-        <p>
-          I'm Mateo Rumac, a 24-year-old web developer employed at D&A Nekretnine. I graduated from Juraj Dobrila University in Pula, Croatia, where I honed my skills in modern web technologies and design.
-        </p>
-      </div>
-      <!-- Card 2 -->
-      <div class="about-card">
-        <i class="fas fa-language"></i>
-        <h3>Language Skills</h3>
-        <p>
-          I am fluent in English with a C1 proficiency, allowing me to communicate effectively and handle both technical and client-facing aspects of projects.
-        </p>
-      </div>
-      <!-- Card 3 -->
-      <div class="about-card">
-        <i class="fas fa-briefcase"></i>
-        <h3>Professional Services</h3>
-        <p>
-          In addition to my professional role, I am available to create websites for clients. I take pride in delivering elegant and efficient solutions tailored to individual needs.
-        </p>
-      </div>
-    </div>
-    <button class="dwnldbtn" @click="visitResumeSite">View Resume</button>
-  </div>
-</section>
   <section id="cta">
     <div class="container3">
       <h2>Ready to bring your vision to life?</h2>
