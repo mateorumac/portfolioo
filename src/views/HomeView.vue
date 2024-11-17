@@ -46,6 +46,30 @@
     <button class="dwnldbtn" @click="visitResumeSite">View Resume</button>
   </div>
 </section>
+<section id="publications">
+    <div class="container2">
+      <h2>Published Work</h2>
+      <div class="cards-container">
+        <div class="card vertical-card">
+          <div class="card-image">
+            <a href="https://repozitorij.unipu.hr/islandora/object/unipu%3A9707" target="_blank">
+              <img src="@/assets/zavrsnirad.png" alt="Paper Title Image" />
+            </a>
+          </div>
+          <div class="card-content">
+            <h3 class="project-headline">Artificial intelligence and web frontend programming</h3>
+            <p class="cardtext short-text">
+              This paper examines how AI, especially tools like ChatGPT and Copilot, can enhance frontend web development. 
+              It highlights their impact on user experience and development speed.
+              Future trends like Edge AI and generative models are discussed, along with challenges such as performance 
+              optimization and user privacy. Practical examples show AI's growing role in creating smarter web applications.
+            </p>
+            <p class="keywords">Keywords: Artificial intelligence, Frontend programming, ChatGPT, Copilot, web applications</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="projects">
     <div class="container2">
       <h2>Featured Projects</h2>
@@ -124,30 +148,6 @@
           </div>
         </div>
         <!-- Add more cards -->
-      </div>
-    </div>
-  </section>
-  <section id="publications">
-    <div class="container2">
-      <h2>Published Work</h2>
-      <div class="cards-container">
-        <div class="card vertical-card">
-          <div class="card-image">
-            <a href="https://repozitorij.unipu.hr/islandora/object/unipu%3A9707" target="_blank">
-              <img src="@/assets/zavrsnirad.png" alt="Paper Title Image" />
-            </a>
-          </div>
-          <div class="card-content">
-            <h3 class="project-headline">Artificial intelligence and web frontend programming</h3>
-            <p class="cardtext short-text">
-              This paper examines how AI, especially tools like ChatGPT and Copilot, can enhance frontend web development. 
-              It highlights their impact on user experience and development speed.
-              Future trends like Edge AI and generative models are discussed, along with challenges such as performance 
-              optimization and user privacy. Practical examples show AI's growing role in creating smarter web applications.
-            </p>
-            <p class="keywords">Keywords: Artificial intelligence, Frontend programming, ChatGPT, Copilot, web applications</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -293,7 +293,7 @@ h1 {
 }
 
 #cta {
-  background-color: #1E1E1E; 
+  background-color: #1e1e1e; 
   text-align: center;
   padding: 50px;
   position: relative;
@@ -374,7 +374,7 @@ p {
 }
 
 #projects {
-  background-color: #1E1E1E;
+  background-color: #2c2c2c; 
   padding: 4rem 0;
   color: #f4f4f4;
   text-align: center;
@@ -393,14 +393,15 @@ p {
   display: flex;
   flex-direction: row; 
   align-items: center;
-  background-color: #2c2c2c;
+  background: linear-gradient(135deg, #3a3a3a, #353535);
   border-radius: 15px;
   padding: 20px;
   width: 80%;
   max-width: 1200px;
   height: 400px; 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 .card:hover {
@@ -450,6 +451,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #f8f5e1; /* Ensure text is readable */
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 .project-headline {
