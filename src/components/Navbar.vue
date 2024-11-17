@@ -90,7 +90,7 @@ header {
   font-size: 2.3rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #f4f4f4;
+  color: #c9b373;
   text-transform: uppercase;
   margin: 0;
   text-decoration: none;
@@ -99,7 +99,7 @@ header {
 }
 
 .nav:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .nav-links {

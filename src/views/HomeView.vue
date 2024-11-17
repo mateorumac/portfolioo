@@ -6,10 +6,10 @@
           <img src="@/assets/prof1.jpg" alt="Mateo Rumac" />
         </div>
         <div class="profile-info">
-          <h2 >Mateo Rumac</h2>
+          <h2 id="tittle">Mateo Rumac</h2>
           <p class="subtext"><i>Univ. Bacc. Inf. </i></p> <br>
-          <p class="description">Passionate web developer specializing in <br> modern frontend development.</p> <br>
-          <p class="description">Committed to delivering elegant and efficient <br> solutions that elevate user experiences</p> 
+          <p class="description">Passionate web developer specializing in  modern frontend development</p> <br>
+          <p class="description">Committed to delivering elegant and efficient  solutions that elevate user experiences</p> 
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@
 
   <section id="projects">
     <div class="container2">
-      <h2>My Projects</h2>
+      <h2>Featured Projects</h2>
       <div class="cards-container">
         <div class="card">
           <div class="card-image">
@@ -98,7 +98,7 @@
   </section>
   <section id="publications">
     <div class="container2">
-      <h2>My Publications</h2>
+      <h2>Published Work</h2>
       <div class="cards-container">
         <div class="card vertical-card">
           <div class="card-image">
@@ -121,19 +121,42 @@
     </div>
   </section>
   <section id="about">
-    <div class="container5">
-      <h2>Some details about me</h2> <br>
-      <p class="aboutme">Hello everyone!👋 <br><br> I'm Mateo Rumac, a 24-year-old recent graduate from Juraj Dobrila University in Pula, Croatia, specializing in front-end web development. Outside of my academic journey, I love diving into real-world projects, transforming lines of code into meaningful digital experiences.
-        <br><br><br>With a C1 proficiency in English, I handle both the technical and communication sides of projects with ease. I'm on the lookout for entry or junior-level positions in web development, eager to bring my skills and passion to new challenges.
-        <br><br><br>Let's connect and turn ideas into engaging digital realities! If you'd like to know more about me, feel free to download my resume below!</p><br>
-      <button class="dwnldbtn" @click="visitResumeSite">View Resume</button>
+  <div class="container5">
+    <h2>A Bit About Me</h2> <br>
+    <div class="about-cards">
+      <!-- Card 1 -->
+      <div class="about-card">
+        <i class="fas fa-user-graduate"></i>
+        <h3>Education</h3>
+        <p>
+          I'm Mateo Rumac, a 24-year-old web developer employed at D&A Nekretnine. I graduated from Juraj Dobrila University in Pula, Croatia, where I honed my skills in modern web technologies and design.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div class="about-card">
+        <i class="fas fa-language"></i>
+        <h3>Language Skills</h3>
+        <p>
+          I am fluent in English with a C1 proficiency, allowing me to communicate effectively and handle both technical and client-facing aspects of projects.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="about-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Professional Services</h3>
+        <p>
+          In addition to my professional role, I am available to create websites for clients. I take pride in delivering elegant and efficient solutions tailored to individual needs.
+        </p>
+      </div>
     </div>
-  </section>
+    <button class="dwnldbtn" @click="visitResumeSite">View Resume</button>
+  </div>
+</section>
   <section id="cta">
     <div class="container3">
-      <h2>Ready to Start a Project?</h2>
+      <h2>Ready to bring your vision to life?</h2>
       <p>
-        Feel free to reach out to me through various channels. I'm always open to new opportunities and collaborations.
+        I’d love to hear from you! Whether you have a project in mind or are looking to collaborate, feel free to reach out through any of my channels. Let’s create something amazing together.
       </p>
       <div class="contact-links">
         <div class="contact-item">
@@ -168,6 +191,16 @@
 import '@fortawesome/fontawesome-free/css/all.css';
 
 export default {
+  data() {
+    return {
+      showHero: false,
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      this.showHero = true; 
+    }, 500); 
+  },
   methods: {
     visitDifferentSite() {
       const url = 'https://github.com/mateorumac/frontendWA';
@@ -184,6 +217,53 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Image animation */
+.profile-image img {
+  animation: fadeInLeft 1.5s ease-out; 
+  opacity: 0; 
+  animation-fill-mode: forwards; 
+}
+
+/* Text animation */
+.profile-info {
+  animation: fadeInRight 1.5s ease-out 0.5s; 
+  opacity: 0; 
+  animation-fill-mode: forwards; 
+}
+
 h1 {
   font-size: 3.5rem;
   margin: 0;
@@ -197,6 +277,11 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   margin-top: -1.3rem;
+}
+
+#tittle {
+  font-size: 2.4rem;
+  text-align: center;
 }
 
 .description {
@@ -249,22 +334,30 @@ p {
 }
 
 .container4 {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 1600px; 
+  margin: 0 auto; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0; 
+  gap: 4rem;
 }
 
 .profile-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; 
   align-items: center;
+  flex-wrap: nowrap; 
+  gap: 4rem;
 }
 
 .profile-image img {
-  width: 125%; 
+  flex-shrink: 0;
+  width: 550px; 
+  height: auto; 
   border-radius: 15px; 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-  margin-left: -200px; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  margin-left: -180px;
 }
 
 .profile-image img:hover {
@@ -273,8 +366,12 @@ p {
 }
 
 .profile-info {
-  max-width: 80%; 
-  margin-left: 40px; 
+  flex: 1; 
+  max-width: 1000px; 
+  text-align: center; 
+  line-height: 2; 
+  font-size: 1.3rem; 
+  color: #f8f5e1;
 }
 
 #projects {
@@ -389,6 +486,83 @@ p {
   padding: 4rem 0;
 }
 
+.about-cards {
+  display: flex;
+  justify-content: center; 
+  align-items: stretch; 
+  gap: 2rem; 
+  flex-wrap: nowrap; 
+  margin-top: 2rem;
+}
+
+.about-card {
+  background-color: #1E1E1E;
+  color: #f8f5e1;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 300px; 
+  height: 350px; 
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  flex-shrink: 0; 
+}
+
+.about-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.about-card i {
+  font-size: 2.5rem;
+  color: #c9b373;
+  margin-bottom: 1rem;
+}
+
+.about-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #c9b373;
+}
+
+.about-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f8f5e1;
+  flex-grow: 1; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin: 0;
+}
+
+.dwnldbtn {
+  display: block;
+  margin-top: 3rem !important; 
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c9b373;
+  color: #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+  border: none;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.dwnldbtn:hover {
+  background-color: #b2955d;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 .container5 {
   max-width: 800px;
   margin: 0 auto;
@@ -504,6 +678,21 @@ p {
   .container2 {
     max-width: none;
   }
+
+  #about .about-cards {
+    flex-wrap: nowrap; 
+    justify-content: center;
+    gap: 3rem; 
+  }
+
+  #about .about-card {
+    width: 300px; 
+    height: 350px; 
+  }
+
+  .dwnldbtn {
+    margin-top: 3rem; 
+  }
 }
 
 /* Medium screens */
@@ -555,11 +744,6 @@ p {
     padding: 0 10px;
   }
 
-  .dwnldbtn {
-    font-size: 1.2rem;
-    padding: 14px 20px;
-  }
-
   header .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -568,6 +752,21 @@ p {
   .nav-link {
     font-size: 1.4rem;
     margin: 0 1.5rem;
+  }
+
+  #about .about-cards {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem; 
+  }
+
+  #about .about-card {
+    width: 280px; 
+    height: 330px; 
+  }
+
+  .dwnldbtn {
+    margin-top: 2.5rem; 
   }
 }
 
@@ -621,11 +820,6 @@ p {
     padding: 0 10px;
   }
 
-  .dwnldbtn {
-    font-size: 1.1rem;
-    padding: 12px 16px;
-  }
-
   header .container {
     max-width: 100%;
     margin: 0 auto;
@@ -638,6 +832,22 @@ p {
 
   .card-content {
     text-align: left;
+  }
+
+  #about .about-cards {
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2rem; 
+  }
+
+  #about .about-card {
+    width: 250px; 
+    height: auto; 
+    margin-bottom: 2rem; 
+  }
+
+  .dwnldbtn {
+    margin-top: 2rem; 
   }
 }
 
@@ -709,6 +919,21 @@ p {
   }
   #publications .cardtext {
     font-size: 0.95rem;
+  }
+  #about .about-cards {
+    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1.5rem; 
+  }
+
+  #about .about-card {
+    width: 90%; 
+    height: auto; 
+  }
+
+  .dwnldbtn {
+    margin-top: 2rem; 
   }
 }
 </style>
