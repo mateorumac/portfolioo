@@ -8,8 +8,8 @@
         <div class="profile-info">
           <h2 >Mateo Rumac</h2>
           <p class="subtext"><i>Univ. Bacc. Inf. </i></p> <br>
-          <p class="description">Passionate developer with a strong foundation in web <br> frontend development.</p> <br>
-          <p class="description">Committed to creating elegant and efficient solutions</p> 
+          <p class="description">Passionate web developer specializing in <br> modern frontend development.</p> <br>
+          <p class="description">Committed to delivering elegant and efficient <br> solutions that elevate user experiences</p> 
         </div>
       </div>
     </div>
