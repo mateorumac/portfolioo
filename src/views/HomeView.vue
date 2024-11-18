@@ -206,7 +206,7 @@ export default {
       window.open(url, '_blank');
     },
     visitResumeSite() {
-      const url = 'https://mateorumaccveng.tiiny.site/';
+      const url = 'https://mateorumaccven.tiiny.site/';
       window.open(url, '_blank');
     },
   },
