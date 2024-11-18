@@ -9,9 +9,9 @@
           <span :class="{'open': isMenuOpen}"></span>
         </button>
         <nav class="nav-links" :class="{'mobile-menu': isMenuOpen}">
-          <router-link to="#projects" class="nav-link" @click="scrollToSection('#projects'); closeMenu()">Projects</router-link>
+           <router-link to="#about" class="nav-link" @click="scrollToSection('#about'); closeMenu()">About Me</router-link>
           <router-link to="#publications" class="nav-link" @click="scrollToSection('#publications'); closeMenu()">Publications</router-link>
-          <router-link to="#about" class="nav-link" @click="scrollToSection('#about'); closeMenu()">About Me</router-link>
+          <router-link to="#projects" class="nav-link" @click="scrollToSection('#projects'); closeMenu()">Projects</router-link>
         </nav>
       </div>
     </header>
