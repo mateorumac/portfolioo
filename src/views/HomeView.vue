@@ -76,36 +76,6 @@
       <div class="cards-container">
         <div class="card">
           <div class="card-image">
-            <a href="https://smartstyleecom.vercel.app/" target="_blank">
-              <img src="@/assets/smartstyle.jpg" alt="E-commerce web app" />
-            </a>
-          </div>
-          <div class="card-content">
-            <h3 class="project-headline">SmartStyle</h3>
-            <p class="cardtext">
-              SmartStyle is a sleek e-commerce web application built with React, 
-              designed to simplify online shopping. Leveraging a dynamic product API, SmartStyle offers a seamless and user-friendly experience, 
-              with responsive design for optimal browsing on any device.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">
-            <a href="https://bbuddy-mateorumacs-projects.vercel.app/" target="_blank">
-              <img src="@/assets/bbuddy.jpg" alt="Food search web app" />
-            </a>
-          </div>
-          <div class="card-content">
-            <h3 class="project-headline">BiteBuddy</h3>
-            <p class="cardtext">
-              BiteBuddy is an intuitive web application crafted with Vue.js, designed to make searching for food and recipes a breeze. Leveraging the powerful Spoonacular API, 
-              BiteBuddy offers a seamless and feature-rich experience for food enthusiasts. <br><br>
-              Note: API is limited to 150 requests per day.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">
             <a href="https://frontend-wa.vercel.app" target="_blank">
               <img src="@/assets/bba.png" alt="Beauty salon website" />
             </a>
@@ -864,6 +834,12 @@ p {
     padding: 0 20px;
   }
 
+  #publications .container2 {
+    margin-top: 5rem;
+  }
+  #publications .container2 h2 {
+    margin-bottom: -1rem;
+  }
   .profile-content,
   .project-content {
     flex-direction: column;
@@ -964,7 +940,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
   }
 
   .contact-item {
